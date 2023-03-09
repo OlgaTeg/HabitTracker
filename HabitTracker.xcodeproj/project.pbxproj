@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		071A8EF929AF474E00093882 /* HabitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071A8EF829AF474E00093882 /* HabitViewModel.swift */; };
 		07D7D0C729AF3859000AD455 /* HabitTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D7D0C629AF3859000AD455 /* HabitTrackerApp.swift */; };
 		07D7D0C929AF3859000AD455 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D7D0C829AF3859000AD455 /* ContentView.swift */; };
 		07D7D0CB29AF385B000AD455 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07D7D0CA29AF385B000AD455 /* Assets.xcassets */; };
@@ -16,6 +17,8 @@
 		07D7D0DD29AF385B000AD455 /* HabitTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D7D0DC29AF385B000AD455 /* HabitTrackerTests.swift */; };
 		07D7D0E729AF385B000AD455 /* HabitTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D7D0E629AF385B000AD455 /* HabitTrackerUITests.swift */; };
 		07D7D0E929AF385B000AD455 /* HabitTrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D7D0E829AF385B000AD455 /* HabitTrackerUITestsLaunchTests.swift */; };
+		07D7D0FA29AF3D37000AD455 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D7D0F929AF3D37000AD455 /* Home.swift */; };
+		07DE8BEA29AF659F005D4BD4 /* AddNewHabit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DE8BE929AF659F005D4BD4 /* AddNewHabit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		071A8EF829AF474E00093882 /* HabitViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitViewModel.swift; sourceTree = "<group>"; };
 		07D7D0C329AF3859000AD455 /* HabitTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HabitTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07D7D0C629AF3859000AD455 /* HabitTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitTrackerApp.swift; sourceTree = "<group>"; };
 		07D7D0C829AF3859000AD455 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -48,6 +52,8 @@
 		07D7D0E229AF385B000AD455 /* HabitTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HabitTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07D7D0E629AF385B000AD455 /* HabitTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitTrackerUITests.swift; sourceTree = "<group>"; };
 		07D7D0E829AF385B000AD455 /* HabitTrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitTrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		07D7D0F929AF3D37000AD455 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		07DE8BE929AF659F005D4BD4 /* AddNewHabit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewHabit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +104,8 @@
 		07D7D0C529AF3859000AD455 /* HabitTracker */ = {
 			isa = PBXGroup;
 			children = (
+				07D7D0F629AF3C9D000AD455 /* ViewModel */,
+				07D7D0F529AF3C95000AD455 /* View */,
 				07D7D0C629AF3859000AD455 /* HabitTrackerApp.swift */,
 				07D7D0C829AF3859000AD455 /* ContentView.swift */,
 				07D7D0CA29AF385B000AD455 /* Assets.xcassets */,
@@ -131,6 +139,23 @@
 				07D7D0E829AF385B000AD455 /* HabitTrackerUITestsLaunchTests.swift */,
 			);
 			path = HabitTrackerUITests;
+			sourceTree = "<group>";
+		};
+		07D7D0F529AF3C95000AD455 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				07D7D0F929AF3D37000AD455 /* Home.swift */,
+				07DE8BE929AF659F005D4BD4 /* AddNewHabit.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		07D7D0F629AF3C9D000AD455 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				071A8EF829AF474E00093882 /* HabitViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +290,9 @@
 			files = (
 				07D7D0D029AF385B000AD455 /* Persistence.swift in Sources */,
 				07D7D0D329AF385B000AD455 /* HabitTracker.xcdatamodeld in Sources */,
+				07D7D0FA29AF3D37000AD455 /* Home.swift in Sources */,
+				07DE8BEA29AF659F005D4BD4 /* AddNewHabit.swift in Sources */,
+				071A8EF929AF474E00093882 /* HabitViewModel.swift in Sources */,
 				07D7D0C929AF3859000AD455 /* ContentView.swift in Sources */,
 				07D7D0C729AF3859000AD455 /* HabitTrackerApp.swift in Sources */,
 			);
@@ -430,8 +458,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -439,9 +467,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Olga-Tegza.HabitTracker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -458,8 +489,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -467,9 +498,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Olga-Tegza.HabitTracker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
